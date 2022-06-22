@@ -7,26 +7,13 @@ class Item
     @color = input[:color]
     @price = input[:price]
   end
+end
 
-  # def name
-  #   @name
-  # end
-
-  # def color
-  #   @color
-  # end
-
-  # def price
-  #   @price
-  # end
-
-  # def color=(color)
-  #   @color = color
-  # end
-
-  # def price=(price)
-  #   @price = price
-  # end
+class Food < Item
+  def initialize
+    super
+    @shelf_life = input[:shelf_life]
+  end
 end
 
 item1 = Item.new(name: "paint", color: "green", price: 10)
