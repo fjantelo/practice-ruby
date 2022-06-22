@@ -1,29 +1,32 @@
 class Item
+  attr_reader :name, :color, :price
+  attr_writer :color, :price
+
   def initialize(name, color, price)
     @name = name
     @color = color
     @price = price
   end
 
-  def name
-    @name
-  end
+  # def name
+  #   @name
+  # end
 
-  def color
-    @color
-  end
+  # def color
+  #   @color
+  # end
 
-  def price
-    @price
-  end
+  # def price
+  #   @price
+  # end
 
-  def color=(color)
-    @color = color
-  end
+  # def color=(color)
+  #   @color = color
+  # end
 
-  def price=(price)
-    @price = price
-  end
+  # def price=(price)
+  #   @price = price
+  # end
 end
 
 item1 = Item.new("paint", "green", 10)
