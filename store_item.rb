@@ -1,3 +1,9 @@
+module Discountable
+  def discount
+    @price = @price * 0.75
+  end
+end
+
 class Item
   attr_reader :name, :color, :price
   attr_writer :color, :price
